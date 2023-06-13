@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Product</title>
+</head>
+<body>
+    <form action="#">
+        <label for="productId">Product ID</label>
+        <input type="text" name="productId" id="productId" /><br>
+        <label for="productName">Product Name</label>
+        <input type="text" name="productName" id="productName" /><br>
+        <label for="importPrice">Import Price</label>
+        <input type="text" name="importPrice" id="importPrice" /><br>
+        <label for="exportPrice">Export Price</label>
+        <input type="text" name="exportPrice" id="exportPrice" /><br>
+        <label for="importDate">Import Date</label>
+        <input type="date" name="importDay" id="importDay" /><br>
+        <label for="size">Size</label>
+        <input type="checkbox" name="size" id="X" value="X"><label for="X">X</label>
+        <input type="checkbox" name="size" id="XL" value="XL"><label for="XL">XL</label>
+        <input type="checkbox" name="size" id="L" value="L"><label for="L">L</label><br>
+        <label for="type">Type</label>
+        <input type="radio" name="type" id="male" value="Male" checked><label for="male">Male</label>
+        <input type="radio" name="type" id="female" value="Female"><label for="female">Female</label><br>
+        <label for="description">Description</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Submit" id="btnSubmit" />
+    </form>
+
+    <h2>List Product</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Product ID</td>
+                <td>Product Name</td>
+                <td>Import Price</td>
+                <td>Export Price</td>
+                <td>Import Date</td>
+                <td>Size</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody id="content">
+
+        </tbody>
+    </table>
+    <script src="./js/product.js"></script>
+</body>
+</html>
